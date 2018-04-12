@@ -1,8 +1,8 @@
 [
   {
     "id": 1,
-    "name": "Beth",
-    "image": "./images/beth.jpg",
+    "name": "SBSP6",
+    "image": "./images/sbsp6.jpg",
     "clicked": false
   },
   {
@@ -25,20 +25,20 @@
   },
   {
     "id": 5,
-    "name": "Golden Ford",
-    "image": "./images/goldenford.png",
+    "name": "SBSP7",
+    "image": "./images/sbsp7.png",
     "clicked": false
   },
   {
     "id": 6,
-    "name": "Jerry",
-    "image": "./images/jerry.jpg",
+    "name": "SBSP8",
+    "image": "./images/sbsp8.jpg",
     "clicked": false
   },
   {
     "id": 7,
-    "name": "Jessica",
-    "image": "./images/jessica.png",
+    "name": "SBSP9",
+    "image": "./images/sbsp9.jpg",
     "clicked": false
   },
   {
@@ -55,20 +55,20 @@
   },
   {
     "id": 10,
-    "name": "MR",
-    "image": "./images/mr.jpg",
+    "name": "SBSP10",
+    "image": "./images/sbsp10.jpg",
     "clicked": false
   },
   {
     "id": 11,
-    "name": "Rick",
-    "image": "./images/rick.png",
+    "name": "SBSP11",
+    "image": "./images/sbsp11.png",
     "clicked": false
   },
   {
     "id": 12,
-    "name": "Summer",
-    "image": "./images/Summer.png",
+    "name": "SBSP12",
+    "image": "./images/sbsp12.jpg",
     "clicked": false
   }
 ]

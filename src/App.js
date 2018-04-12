@@ -1,7 +1,8 @@
 import React, { Component } from "react";
+// import BootStrap from "./components/Bootstrap";
 import GameCard from "./components/GameCard";
 import Wrapper from "./components/Wrapper";
-import Title from "./components/Title";
+// import Title from "./components/Title";
 import characters from "./characters.json";
 import "./App.css";
 
@@ -44,57 +45,41 @@ class App extends Component {
       });
       this.setState({ characters });
       this.setState({ guessesCorrect });
+      this.setState({ topScore });
       this.setState({ message });
     }
   };
   render() {
     return (
       <Wrapper>
-        <h1>Clicky Game !</h1>
-        <h1>
-          Click on an image to earn points, but don't click on any more than
-          once!
-        </h1>
-        <h3 className="message">{this.state.message}</h3>
-        <div className="row">
-          {this.state.characters.map(character => (
-            <GameCard
-              setClicked={this.setClicked}
-              id={character.id}
-              key={character.id}
-              image={character.image}
-              name={character.name}
-              className="col-sm-1"
-            />
-          ))}
+        <div className="main-container">
+          <h1>Clicky Game !</h1>
+          <h1>
+            Click on an image to earn points, but don't click on any more than
+            once!
+          </h1>
+          <h3 className="message">{this.state.message}</h3>
+          <h3 className=" guessesCorrect">
+            {" "}
+            Number Correct {this.state.guessesCorrect}
+          </h3>
+          <h3 className="topScore">Top Score {this.state.topScore}</h3>
+          <div className="row">
+            {this.state.characters.map(character => (
+              <GameCard
+                setClicked={this.setClicked}
+                id={character.id}
+                key={character.id}
+                image={character.image}
+                name={character.name}
+                className="col-sm-1"
+              />
+            ))}
+          </div>
         </div>
       </Wrapper>
     );
   }
-
-  // ********old code
-  // removeFriend = id => {
-  //   const characters = this.state.characters.filter(character => character.id !== id);
-  //   this.setState({ characters });
-  // };
-  // render() {
-  //   return (
-  //     <Wrapper>
-  //       <Title>Game Cards</Title>
-  //       {this.state.characters.map(character => (
-  //         <FriendCard
-  //           removeFriend={this.removeFriend}
-  //           id={character.id}
-  //           key={character.id}
-  //           name={character.name}
-  //           image={character.image}
-  //           occupation={character.occupation}
-  //           location={character.location}
-  //         />
-  //       ))}
-  //     </Wrapper>
-  //   );
-  // }
 }
 
 export default App;
