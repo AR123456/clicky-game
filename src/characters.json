@@ -2,25 +2,25 @@
   {
     "id": 1,
     "name": "Beth",
-    "image": "./images/beth.png",
+    "image": "./images/beth.jpg",
     "clicked": false
   },
   {
     "id": 2,
-    "name": "Bird Person",
-    "image": "./images/birdperson.png",
+    "name": "SBSP1",
+    "image": "./images/sbsp1.jpg",
     "clicked": false
   },
   {
     "id": 3,
-    "name": "Evil Morty",
-    "image": "./images/evelmorty.png",
+    "name": "SBSP2",
+    "image": "./images/sbsp2.png",
     "clicked": false
   },
   {
     "id": 4,
-    "name": "Giant Head",
-    "image": "./images/gianthead.png",
+    "name": "SBSP3",
+    "image": "./images/sbsp3.png",
     "clicked": false
   },
   {
@@ -32,7 +32,7 @@
   {
     "id": 6,
     "name": "Jerry",
-    "image": "./images/jerry.png",
+    "image": "./images/jerry.jpg",
     "clicked": false
   },
   {
@@ -43,20 +43,20 @@
   },
   {
     "id": 8,
-    "name": "Mee Seeks",
-    "image": "./images/meeseeks.png",
+    "name": "SBSP4",
+    "image": "./images/sbsp4.png",
     "clicked": false
   },
   {
     "id": 9,
-    "name": "Morty",
-    "image": "./images/morty.png",
+    "name": "SBSP5",
+    "image": "./images/sbsp5.jpg",
     "clicked": false
   },
   {
     "id": 10,
     "name": "MR",
-    "image": "./images/mr.png",
+    "image": "./images/mr.jpg",
     "clicked": false
   },
   {
