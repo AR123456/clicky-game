@@ -6,7 +6,7 @@ const GameCard = props => (
     <div className="img-container">
       <img alt={props.name} src={props.image} className="img" />
     </div>
-    <div className="content">{props.name}</div>
+    {/* <div className="content">{props.name}</div> */}
   </div>
 );
 
