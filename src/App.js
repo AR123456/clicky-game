@@ -68,7 +68,10 @@ class App extends Component {
             Number Correct {this.state.guessesCorrect}
           </h3>
           <h3 className="topScore">Top Score {this.state.topScore}</h3>
-          <main className="container">
+          <main
+            className="container"
+            className={wiggle ? "wiggleClass" : "notWiggleClass"}
+          >
             <div className="row">
               {this.state.characters.map(character => (
                 <GameCard
