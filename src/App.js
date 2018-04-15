@@ -1,23 +1,20 @@
 import React, { Component } from "react";
-// import BootStrap from "./components/Bootstrap";
 import GameCard from "./components/GameCard";
 import Wrapper from "./components/Wrapper";
-// import Title from "./components/Title";
+
 import characters from "./characters.json";
 import "./App.css";
 
 let topScore = 0;
 let guessesCorrect = 0;
 let message = "";
-let wiggle = false;
 
 class App extends Component {
   state = {
     characters,
     topScore,
     guessesCorrect,
-    message,
-    wiggle
+    message
   };
   setClicked = id => {
     const characters = this.state.characters;
@@ -25,7 +22,6 @@ class App extends Component {
 
     if (cardClicked[0].clicked) {
       guessesCorrect = 0;
-      wiggle = true;
       message = "Bummer. Start over";
 
       for (let i = 0; i < characters.length; i++) {
@@ -68,10 +64,7 @@ class App extends Component {
             Number Correct {this.state.guessesCorrect}
           </h3>
           <h3 className="topScore">Top Score {this.state.topScore}</h3>
-          <main
-            className="container"
-            className={wiggle ? "wiggleClass" : "notWiggleClass"}
-          >
+          <main className="container">
             <div className="row">
               {this.state.characters.map(character => (
                 <GameCard
