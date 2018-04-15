@@ -1,2 +1,3 @@
 # clicky-game
-React App Clicky Fame 
+
+React App Clicky Game
